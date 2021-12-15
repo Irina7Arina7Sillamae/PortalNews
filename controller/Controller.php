@@ -2,7 +2,7 @@
 
 class Controller {
     public static function StartSite() {
-        echo 'start site1';
+        //echo 'start site1';
         $arr = News::getLast3News();
         include_once 'view/start.php';
         //echo 'start site2';
@@ -21,7 +21,7 @@ class Controller {
     }
     public static function NewsByID($id) {
         $n = News::getNewsByID($id);
-       // echo 'wewrwteyy';
+       // echo 'ccccccccccc';
         include_once 'view/readnews.php';
     }
     public static function error404() {
@@ -49,8 +49,19 @@ class Controller {
         $arr = Comments::getCommentsCountByNewsID($newsid);
         ViewComments::CommentsCountWithAncor($arr);
     }
-
-
-}// end class
+    //--------------------------------- РЕГИСТРАЦИЯ
+//    public static function registerForm()
+//    {   
+//        // echo '22222222222';
+//        include_once('view/formRegister.php');
+//    }   
+//    public static function registerUser()
+//    {   
+//        $result = Register::registerUser();
+//        
+//        include_once('view/answerRegister.php');
+//    }
+}
+// end class
 // $c - текст комментария
-// id - номер новости
+//  id - номер новости

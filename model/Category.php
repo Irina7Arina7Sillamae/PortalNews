@@ -3,7 +3,7 @@ class Category {
 
     public static function getAllCategory() {
         $query = "SELECT * FROM category";
-        $db = new Database();
+        $db = new database();
         $arr = $db->getAll($query);
         return $arr;
     }
