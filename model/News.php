@@ -5,6 +5,7 @@ class News {
         $query = "SELECT * FROM news ORDER BY id DESC LIMIT 3";
         $db = new Database();
         $arr = $db->getAll($query);
+        //echo 'start site3';
         return $arr;
     }
     public static function getAllNews() {
@@ -23,6 +24,8 @@ class News {
         $query = "SELECT * FROM news where id=".(string)$id;
         $db = new Database();
         $n = $db->getOne($query);
+        // echo 'fgghhjfffffffffff';
         return $n;
     }
 }
+?>

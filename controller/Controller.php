@@ -2,8 +2,10 @@
 
 class Controller {
     public static function StartSite() {
+        echo 'start site1';
         $arr = News::getLast3News();
         include_once 'view/start.php';
+        //echo 'start site2';
     }
     public static function AllCategory() {
         $arr = Category::getAllCategory();
@@ -19,12 +21,36 @@ class Controller {
     }
     public static function NewsByID($id) {
         $n = News::getNewsByID($id);
+       // echo 'wewrwteyy';
         include_once 'view/readnews.php';
     }
     public static function error404() {
         include_once 'view/error404.php';
     }
 
-   
-}
-?>
+    public static function InsertComment($c, $id) {
+    Comments::InsertComment($c, $id);
+    // self::NewsById(id);
+    header('Location:news?id='.$id.'#ctable');
+    }
+    //список комментариев
+    public static function Comments($newsid) {
+        // echo 'aaaaaaaaa';
+        $arr = Comments::getCommentByNewsID($newsid);
+        ViewComments::CommentsByNews($arr);
+    }
+    //количество комментариев к новости
+    public static function CommentsCount($newsid) {
+        $arr = Comments::getCommentsCountByNewsID($newsid);
+         ViewComments::CommentsCount($arr);
+    }
+    //ссылка - переход к списку коментариев
+    public static function CommentsCountWithAncor($newsid) {
+        $arr = Comments::getCommentsCountByNewsID($newsid);
+        ViewComments::CommentsCountWithAncor($arr);
+    }
+
+
+}// end class
+// $c - текст комментария
+// id - номер новости
