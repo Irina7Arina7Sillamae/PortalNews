@@ -8,9 +8,9 @@ class database {
 
     function __construct() {
         $this->host = 'localhost';
-        $this->user='root';
-        $this->password='';
-        $this->baseName='newsportal';
+        $this->user = 'root';
+        $this->password = '';
+        $this->baseName = 'newsportal';
         $this->connect();
     }
     function __destruct() {
@@ -23,7 +23,7 @@ class database {
                 baseName.'', $this->user, $this->password, array(PDO::
                 MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
             }
-            catch (exception $e) {
+            catch (Exception $e) {
                 die('Connection failed : '. $e->getMessage());
             }
         }
