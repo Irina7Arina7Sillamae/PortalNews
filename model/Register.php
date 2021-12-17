@@ -26,7 +26,8 @@ class Register {
                 $date=Date("Y-m-d");
 
                 $sql="INSERT INTO `users` (`id`, `username`, `email`, `password`, `status`, 
-                `registration_date`, `pass`) VALUES (NULL, '$name', '$email', '$passwordHash', 'user', '$date', '$password')";
+                `registration_date`, `pass`) VALUES (NULL, '$name', '$email', '$passwordHash', 
+                'user', '$date', '$password')";
                 $db = new database();
                 $item = $db->executeRun($sql);
                     if($item)
