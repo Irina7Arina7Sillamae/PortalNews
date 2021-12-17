@@ -59,7 +59,7 @@ public static function getNewsEdit($id) {
                 $uploaddir = '../images/';
                 $uploadfile = $uploaddir . basename($_FILES['picture']['name']);
                 copy($_FILES['picture']['tmp_name'], $uploadfile);   */
-
+            }
 //-------------------------------------------------
                 if($image=="") {
                     $sql = "UPDATE `news` SET `title` = '$title', `text` = '$text',
@@ -78,6 +78,4 @@ public static function getNewsEdit($id) {
         }
         return $test;
     }
-}
-
 } //class

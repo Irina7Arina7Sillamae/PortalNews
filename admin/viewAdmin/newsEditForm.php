@@ -29,7 +29,7 @@
                     <tr>
                         <td>News text</td>
                         <td><textarea rows="5" name="text" class="form-control" required><?php echo
-                                                                                            $detail['title']; ?></textarea></td>
+                            $detail['text']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Category</td>
