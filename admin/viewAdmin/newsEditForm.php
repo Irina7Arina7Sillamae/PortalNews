@@ -24,8 +24,8 @@
                 <table class="table table-bordered">
                     <tr>
                         <td>News title</td>
-                        <td><input type="text" name="title" class="form-control" required value=<?php 
-                        echo $detail['title']; ?> ></td>
+                        <td><input type="text" name="title" class="form-control" required value="<?php 
+                        echo $detail['title']; ?>" ></td>
                     </tr>
                     <tr>
                         <td>News text</td>
