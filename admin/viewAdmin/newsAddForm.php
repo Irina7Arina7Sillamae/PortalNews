@@ -58,7 +58,7 @@
                     <tr>
                         <td colspan="2">
                             <button type="submit" class="btn btn-primary" name="save">
-                                <span class="glyphicon glyphicon-plus"></span>Сохранить
+                                <span class="glyphicon glyphicon-plus"></span> &nbsp;Сохранить
                             </button>
                             <a href="newsAdmin" class="btn btn-large btn-success">
                                 <i class="glyphicon glyphicon-backward"></i> &nbsp;Назад к списку</a>

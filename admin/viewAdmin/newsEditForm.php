@@ -24,12 +24,13 @@
                 <table class="table table-bordered">
                     <tr>
                         <td>News title</td>
-                        <td><input type="text" name="title" class="form-control" required value=<?php echo $detail['title']; ?>></td>
+                        <td><input type="text" name="title" class="form-control" required value=<?php 
+                        echo $detail['title']; ?> ></td>
                     </tr>
                     <tr>
                         <td>News text</td>
-                        <td><textarea rows="5" name="text" class="form-control" required><?php echo
-                            $detail['text']; ?></textarea></td>
+                        <td><textarea rows="5" name="text" class="form-control" required><?php 
+                        echo $detail['text']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Category</td>

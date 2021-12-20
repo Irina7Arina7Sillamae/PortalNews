@@ -10,7 +10,7 @@ class database {
         $this->host = 'localhost';
         $this->user = 'root';
         $this->password = '';
-        $this->baseName = 'newsportal';
+        $this->baseName = 'newslob2';
         $this->connect();
     }
     function __destruct() {
@@ -24,7 +24,7 @@ class database {
                 MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
             }
             catch (Exception $e) {
-                die('Connection failed : '. $e->getMessage());
+                die('Connection failed : '.$e->getMessage());
             }
         }
         return $this->conn;

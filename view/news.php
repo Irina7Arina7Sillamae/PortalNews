@@ -26,7 +26,7 @@ class ViewNews {
         echo '<br><img src="data:image/ipeg;base64,'.base64_encode($n['picture']).'"
         width=250 height=200/><br>';   
 
-        echo "<p>".$n['text']."</p>";
+        echo "<p><br>".$n['text']."</p>";
         }
     //Добавить методы для других видов представления новостей
     }//end class

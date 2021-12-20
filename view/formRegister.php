@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Register User</title>
-    <link href="public/css/bootstrap.min.css" rel="stylesheet" >
-    <link href="public/css/login.css" rel="stylesheet" >
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/login.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h3>Register</h3></div>
+                    <div class="panel-heading">
+                        <h3>Register</h3>
+                    </div>
                     <div class="panel-body">
-                        <form  class="form-horizontal" role="form" method="POST" action="registerAnswer">
+                        <form class="form-horizontal" role="form" method="POST" action="registerAnswer">
                             <div class="form-group">
                                 <label for="name" class="col-md-4 control-label">Name</label>
                                 <div class="col-md-6">
@@ -51,6 +54,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>

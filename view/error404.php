@@ -6,3 +6,5 @@ ob_start();
 $content = ob_get_clean();
 include_once 'view/layout.php';
 ?>
+© 2021 GitHub, Inc.
+Terms
